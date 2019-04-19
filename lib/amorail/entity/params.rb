@@ -15,13 +15,19 @@ module Amorail # :nodoc: all
 
     protected
 
+    CUSTOM_FIELD_ALIASES = {
+      site: 'Ссылка на профиль',
+      form_name: 'Название формы',
+      client_id: 'client id'
+    }.freeze
+
     def custom_fields
       props = properties.send(self.class.amo_name)
 
       custom_fields = []
 
       self.class.properties.each do |k, v|
-        prop_id = props.send(k).id
+        prop_id = props.send(CUSTOM_FIELD_ALIASES[k] || k).id
         prop_val = { value: send(k) }.merge(v)
         custom_fields << { id: prop_id, values: [prop_val] }
       end

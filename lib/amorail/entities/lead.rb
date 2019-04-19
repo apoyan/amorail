@@ -7,6 +7,15 @@ module Amorail
 
     validates :name, :status_id, presence: true
 
+    amo_property :utm_source
+    amo_property :utm_medium
+    amo_property :utm_campaign
+    amo_property :utm_content
+    amo_property :utm_term
+    amo_property :ga_client_id
+    amo_property :client_id
+    amo_property :form_name
+
     def reload
       @contacts = nil
       super
