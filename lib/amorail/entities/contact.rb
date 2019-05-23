@@ -9,7 +9,8 @@ module Amorail
     amo_field :name, :company_name, :linked_company_id, :created_user_id
 
     amo_property :email, enum: 'WORK'
-    amo_property :phone, enum: 'MOB'
+    amo_property :phone_mobile, enum: 'MOB'
+    amo_property :phone_work, enum: 'WORK'
     amo_property :position
     amo_property :site
 

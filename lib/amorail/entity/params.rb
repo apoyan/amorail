@@ -18,7 +18,9 @@ module Amorail # :nodoc: all
     CUSTOM_FIELD_ALIASES = {
       site: 'Ссылка на профиль',
       form_name: 'Название формы',
-      client_id: 'client id'
+      client_id: 'client id',
+      phone_work: 'phone',
+      phone_mobile: 'phone'
     }.freeze
 
     def custom_fields
