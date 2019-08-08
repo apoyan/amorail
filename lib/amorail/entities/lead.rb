@@ -15,6 +15,7 @@ module Amorail
     amo_property :ga_client_id
     amo_property :client_id
     amo_property :form_name
+    amo_property :product_link
 
     def reload
       @contacts = nil

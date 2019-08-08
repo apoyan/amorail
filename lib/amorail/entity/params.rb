@@ -20,7 +20,8 @@ module Amorail # :nodoc: all
       form_name: 'Название формы',
       client_id: 'client id',
       phone_work: 'phone',
-      phone_mobile: 'phone'
+      phone_mobile: 'phone',
+      product_link: 'Ссылка на товар'
     }.freeze
 
     def custom_fields
