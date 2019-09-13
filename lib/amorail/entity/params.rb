@@ -21,7 +21,8 @@ module Amorail # :nodoc: all
       client_id: 'client id',
       phone_work: 'phone',
       phone_mobile: 'phone',
-      product_link: 'Ссылка на товар'
+      product_link: 'Ссылка на товар',
+      profile_link: 'Ссылка на профиль'
     }.freeze
 
     def custom_fields

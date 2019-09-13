@@ -13,6 +13,7 @@ module Amorail
     amo_property :phone_work, enum: 'WORK'
     amo_property :position
     amo_property :site
+    amo_property :profile_link
 
     validates :name, presence: true
 
