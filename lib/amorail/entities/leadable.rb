@@ -1,12 +1,6 @@
 module Amorail
   # Lead associations
   module Leadable
-    extend ActiveSupport::Concern
-
-    included do
-      amo_field :linked_leads_id
-    end
-
     # Set initial value for linked_leads_id to []
     def initialize(*args)
       super
